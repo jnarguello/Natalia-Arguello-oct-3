@@ -1,0 +1,140 @@
+/* google fonts - Fuente Sans Pro */
+@import url('https://fonts.googleapis.com/css2? family= Source+Sans+Pro:wght@200 & display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro",sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #676fff;
+}
+
+.profile-card{
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 370px;
+width: 100%;
+border-radius: 24px 24px 0 0;
+padding: 25px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+position: relative;
+}
+
+.profile-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 370px;
+  border-radius: 24px 24px 24px 0 0;
+  background-color: #ffffff;
+}
+
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #425cfc;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+.profile-card .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#3132ff
+}
+
+.text-data .name{
+  font-size: 22px;
+  font-weight: 400px;
+}
+
+.text-data .job{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*BOTONES REDES SOCIALES*/
+.profile-card .media-buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-buttons .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#ffffff;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.profile-card .buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons .button{
+  color: #3132ff;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 8px 24px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease
+}
+
+.buttons .button:hover{
+  background-color: #8889ff;
+}
+
+.profile-card .analytics{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.analytics .data{
+  display: flex;
+  align-items: center;
+  color: #3132ff;
+  padding: 0 20px;
+  border-right: 2px solid #3132ff;
+}
+
+.data i{
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.data:last-child{
+  border-right: none;
+}
